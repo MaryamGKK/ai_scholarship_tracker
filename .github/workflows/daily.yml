@@ -27,7 +27,7 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           ADMIN_REVIEW: ${{ secrets.ADMIN_REVIEW }}
         run: |
-          python src/main.py
+          python -m src.main
       - name: Upload logs
         uses: actions/upload-artifact@v4
         with:
